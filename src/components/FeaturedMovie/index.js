@@ -35,10 +35,10 @@ export default function FeaturedMovie({ item }) {
           </div>
           <div className="description">{description}</div>
           <div className="buttons">
-            <a className="watch" href={`/watch/${item.id}`}>
+            <a className="watch" href="/">
               ► Assistir
             </a>
-            <a className="mylist" href={`/list/add${item.id}`}>
+            <a className="mylist" href="/">
               + Minha Lista
             </a>
           </div>
