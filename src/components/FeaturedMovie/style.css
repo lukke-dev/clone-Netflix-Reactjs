@@ -1,0 +1,123 @@
+.featured {
+  height: 100vh;
+}
+
+.vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 20%, transparent 80%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4.375rem 0 9.375rem 1.875rem;
+
+}
+
+.name {
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 0.938rem;
+}
+
+.points ,
+.year,
+.seasons {
+  display: inline-block;
+  margin-right: 0.938rem;
+}
+
+.points {
+  color: #46d369;
+}
+
+.description {
+  margin-top: 0.938rem;
+  font-size: 1.25rem;
+  color: #999;
+  max-width: 40%;
+}
+
+.buttons {
+  margin-top: 0.938rem;
+}
+
+.watch,
+.mylist {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.625rem 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 0.625rem;
+    transition: all ease 0.2s;
+}
+
+.watch:hover,
+.mylist:hover {
+  opacity: 0.7;
+}
+
+.watch {
+  background-color: #fff;
+  color: #000;
+}
+
+.mylist {
+  background-color: #333;
+  color: #fff;
+}
+
+.genres {
+  margin-top: 0.938rem;
+  font-size: 1.125rem;
+  color: #999;
+}
+
+@media (max-width: 760px) {
+
+  .featured {
+    height: 90vh;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    max-width: 100%;
+    margin-right: 1.875rem;
+  }
+
+  .watch,
+  .mylist {
+    font-size: 1rem;
+  }
+
+  .genres {
+    font-size: 14px;
+  }
+}
+
+@media (max-height: 639px) {
+  .horizontal {
+    padding-top: 70px;
+    justify-content: stretch;
+  }
+}
