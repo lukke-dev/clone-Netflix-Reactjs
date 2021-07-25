@@ -14,7 +14,10 @@ export default function Header({ black }) {
       </div>
       <div className="user">
         <a href="/">
-          <img src="http://localhost:3000/img/icon1.png" alt="usuario" />
+          <img
+            src="http://clonenetflix.lucasdev.fun/img/icon1.png"
+            alt="usuario"
+          />
         </a>
       </div>
     </header>
